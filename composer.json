@@ -1,0 +1,45 @@
+{
+  "name": "zoyalib/framework",
+  "type": "library",
+  "description": "The Zoya framework",
+  "keywords": [
+    "framework",
+    "psr-7"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Zoya Community",
+      "homepage": "https://github.com/zoyalib/framework/graphs/contributors"
+    }
+  ],
+  "require": {
+    "php": ">=8.2"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.7",
+    "phpstan/phpstan": "^1.9"
+  },
+  "config": {
+    "process-timeout": 900,
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Zoya\\": "src/"
+    }
+  },
+  "scripts": {
+    "check": [
+      "@cs-check",
+      "@phpstan"
+    ],
+    "cs-check": "phpcs --standard=PSR12 --colors --parallel=4 -p src/",
+    "cs-fix": "phpcbf --standard=PSR12 --colors --parallel=4 -p src/",
+    "phpstan": "phpstan analyze"
+  },
+  "support": {
+    "issues": "https://github.com/zoyalib/framework/issues",
+    "source": "https://github.com/zoyalib/framework"
+  }
+}
