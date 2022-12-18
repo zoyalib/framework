@@ -19,5 +19,7 @@ function remote()
 git pull origin $CURRENT_BRANCH
 
 remote http git@github.com:zoyalib/http.git
+remote bus git@github.com:zoyalib/bus.git
 
 split 'src/Http' http
+split 'src/Bus' bus

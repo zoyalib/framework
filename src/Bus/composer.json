@@ -1,0 +1,29 @@
+{
+  "name": "zoyalib/bus",
+  "description": "Zoya Bus Library",
+  "type": "library",
+  "keywords": [
+    "zoya",
+    "framework",
+    "bus"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Zoya Community",
+      "homepage": "https://github.com/zoyalib/framework/graphs/contributors"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/zoyalib/framework/issues",
+    "source": "https://github.com/zoyalib/framework"
+  },
+  "require": {
+    "php": ">=8.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Zoya\\Bus\\": "."
+    }
+  }
+}
